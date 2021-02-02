@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz Javascript</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- top section -->
+  <div class="intro py-3 bg-white text-center">
+    <div class="container">
+      <h2 class="text-warning display-3 my-4">Quiz Javascript</h2>
+    </div>
+  </div>
+
+  <!-- result section -->
+  <div class="result py-4 d-none bg-light text-center">
+      <div class="container lead">
+          <p> Seu resultado é: <span class="text-warning display-4 p-3"> 0%</span> de acerto. </p>
+      </div>
+  </div>
+
+  <!-- quiz section -->
+  <div class="quiz py-4 bg-warning">
+    <div class="container">
+      <h2 class="my-5 text-white">Responda sem consultar!</h2>
+
+      <form class="quiz-form text-white">
+        <div class="my-5">
+          <p class="lead font-weight-bold">1. Qual é o tipo de função que NÃO sofre o comportamento de "Hoisting"?</p>
+          <div class="form-check my-2 text-white">
+            <input type="radio" name="q1" value="A" checked>
+            <label class="form-check-label text-white">Função de Expressão</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="B">
+            <label class="form-check-label text-white">Função Declarada</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal font-weight-bold">2. Qual é a maneira correta de se escrever uma "Arrow Function"?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="A" checked>
+            <label class="form-check-label text-white">(param) => {functionCode}</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="B">
+            <label class="form-check-label text-white">f(param) = {functionCode}</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-bold ">3. Qual método de string  e quais parâmetros devem ser utilizados na string "Ornitorrinco" para que o resultado seja "rinco"?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="A" checked>
+            <label class="form-check-label text-white ">substr(7,5)</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="B">
+            <label class="form-check-label text-white">slice(5,7)</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-bold">4. Qual é o método utilizado para selecionar múltiplos elementos HTML?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="A" checked>
+            <label class="form-check-label text-white" >document.selectElements();</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="B">
+            <label class="form-check-label text-white">document.querySelectorAll()</label>
+          </div>
+        </div>
+        <p class="lead font-weight-normal text-white">Obs: Perguntas idealizadas por mim, de acordo com o que aprendi em meus estudos.</p>
+        <div class="text-center">
+          <input type="submit" class="btn btn-light"> 
+        </div>
+      </form>
+      
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
